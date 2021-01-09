@@ -31,7 +31,7 @@ samples, guidance on mobile development, and a full API reference.
 (@Optional) means that the argument is not required by the RadioGroup to work
 
  (@Required)
-  # groupItemsAlignment
+  ### groupItemsAlignment
     The alignment of the RadioGroup Items. It can be GroupItemsAlignment.row for row alignment
     or GroupItemsAlignment.column for column alignment. Note that according to its value and 
     the parent of the RadioGroup, you will have to play with both 
@@ -39,35 +39,35 @@ samples, guidance on mobile development, and a full API reference.
    [internalMainAxisAlignment](#internmainaxisalignment) to make the RadioGroup be at the right place
    
  (@Required)
-  # children
+  ### children
     The item or the list of the items label of the RadioGroup. You can pass any widget or list of widget 
     you want but It's good to pass a Text widget or a list of Text widget like shown   
   [here](#short-illustration).
     Note that you can add a Style to the Text or use any widget you want.
     
  (@Required)
-  # onSelectionChanged
+  ### onSelectionChanged
     Callback called when the selected item changed
     it returns the index of the selected radio button. Note
     that the index start at 0.
     
  (@Optional)
-  # defaultSelectedItem
+  ### defaultSelectedItem
     (int): Is the default item to select for the RadioGroup. By default the first item is selected. 
     Note that the index begin at 0. If you don't want any item to be selected, just give a
     negative value to it.
   
   (@Optional)
-  # padding
+  ### padding
     (EdgeInsetsGeometry): Empty space to inscribe inside the RadioGroup.
 
  (@Optional)
-  # textBeforeRadio
+  ### textBeforeRadio
     (Boolean) which tells if the items label must come before or after the radio button.
     By default it's set to true. if you want the opposite, just set it to false
 
  (@Optional)
-  # textBelowRadio
+  ### textBelowRadio
     (Boolean) which tells if the item's label must be below or above the Radio. By default, 
     it's set to true. If you want the opposite, just set it to false. One thing to take in consideration,
     the item's label can not be before and below the radio at the same time. it can only be 
@@ -76,38 +76,38 @@ samples, guidance on mobile development, and a full API reference.
    [priority](#priority) to respect.
 
  (@Optional)
-  # priority
+  ### priority
     (RadioPriority) which tells if the [textBeforeRadio] is important or not than [textBelowRadio].
     it can take two values (RadioPriority.textBeforeRadio or RadioPriority.textBelowRadio).
     By default, textBeforeRadio is important than textBelowRadio
 
  (@Optional)
-  # margin
+  ### margin
     (EdgeInsetsGeometry) Empty space to surround the the RadioGroup items.
 
 
- # (@Optional)
-  # mainAxisAlignment)
+ (@Optional)
+  ### mainAxisAlignment)
     (MainAxisAlignment) The main axis alignment of the RadioGroup.
     Depending on the container of the RadioGroup parent, you could need it or not.
 
  (@Optional)
-  # internMainAxisAlignment
+  ### internMainAxisAlignment
     (MainAxisAlignment): the internal axis alignment of the RadioGroup.
     You can control the main axis alignment of the radio button and its label.
     Depending on the RadioGroup parent, you can have to play with both mainAxisAlignment 
     and this internalRadioAxisAlignment 
 
  (@Optional)
-  # focusColor
+  ### focusColor
     (Color): The color for the radio's [Material] when it has the input focus.
     
  (@Optional)
-  # hoverColor;
+  ### hoverColor;
     (Color): The color for the radio's [Material] when a pointer is hovering over it.
 
 (@Optional)
-  # activeColor
+  ### activeColor
     (Color): The color to use when this radio button is selected.
     Defaults to [ThemeData.toggleableActiveColor].
 
@@ -188,7 +188,7 @@ This is the result of the code above
  (@Required) means that the argument is required by the Widget to work properly
  (@Optional) means that the argument is not required by the RadioGroup to work
  
-   # groupItemsAlignment (@Required);
+   ### groupItemsAlignment (@Required);
      (GroupItemsAlignment): The alignment of the CheckboxGroup Items. It can be GroupItemsAlignment.row for row alignment
      or GroupItemsAlignment.column for column alignment. Note that according to its value and 
      the parent of the RadioGroup, you will have to play with both
@@ -196,23 +196,23 @@ This is the result of the code above
      to make the RadioGroup be right place
     
  
-   # child (@Required)
+   ### child (@Required)
      (Map<Text, bool)): The items of the CheckboxGroup.    
    [here](#short-illustration) is short illustration. Note that you can add a Style to the Text.
      
      
-   # onNewChecked (@Required)
+   ### onNewChecked (@Required)
      A callback to notify that a new check box is checked
      Return a list of checked items. Note That only the item's label (String) is returned
    
-   # padding (@Optional);
+   ### padding (@Optional);
      (EdgeInsetsGeometry): Empty space to inscribe inside the CheckboxGroup.
  
-   # textBeforeCheckbox (@Optional)
+   ### textBeforeCheckbox (@Optional)
      (bool): tells if the items label must come before or after the checkbox.
      By default it's set to true. if you want the opposite, just set it to false
  
-   # textBelowCheckbox (@Optional);
+   ### textBelowCheckbox (@Optional);
      (bool): tells if the item's label must be below or above the checkbox. By default, 
      it's set to true. If you want the opposite, just set it to false. One thing to take in consideration,
      the item's label can not be before and below the checkbox at the same time. it can only be 
@@ -220,37 +220,37 @@ This is the result of the code above
      (below or above the checkbox depending on the textBelowCheckbox's value), so there is a
    [priority](#priority-optional) to respect.
  
-   # priority (@Optional)
+   ### priority (@Optional)
      (CheckboxPriority): tells if the [textBeforeCheckbox] is important or not than [textBelowCheckbox].
      it can take two values (CheckboxPriority.textBeforeCheckbox or CheckboxPriority.textBelowCkeckbox).
      By default, textBeforeCheckbox is important than textBelowCheckbox
  
-   # margin (@Optional)
+   ### margin (@Optional)
      (EdgeInsetsGeometry): Empty space to surround the the RadioGroup items.
  
  
-   # mainAxisAlignment (@Optional)
+   ### mainAxisAlignment (@Optional)
      (MainAxisAlignment): The main axis alignment of the CheckboxGroup.
      Depending on the container of the CheckboxGroup parent, you could need it or not.
  
-   # internMainAxisAlignment (@Optional)
+   ### internMainAxisAlignment (@Optional)
      (MainAxisAlignment): the internal axis alignment of the CheckboxGroup.
      You can control the main axis alignment of the checkbox and its label.
      Depending on the CheckboxGroup parent, you can have to play with both 
    [mainAxisAlignment](#mainaxisalignment-optional) and this internalRadioAxisAlignment 
  
-   # focusColor (@Optional)
+   ### focusColor (@Optional)
      (Color): The color for the checkbox's [Material] when it has the input focus.
      
-   # hoverColor (@Optional)
+   ### hoverColor (@Optional)
      (Color): The color for the checkbox's [Material] when a pointer is hovering over it.
  
-   # activeColor (@Optional)
+   ### activeColor (@Optional)
      (Color): The color to use when the checkbox is checked.
      Defaults to [ThemeData.toggleableActiveColor].
      
   
-  #  checkColor;
+  ###  checkColor (@Optional)
     (Color) The color to use for the check icon when this checkbox is checked.
     Defaults to Color(0xFFFFFFFF)
 
