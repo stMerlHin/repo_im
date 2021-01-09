@@ -1,2 +1,2 @@
 # repo_im
-![Im|250X250](https://github.com/stMerlHin/repo_im/blob/main/check.png?raw=true)
+![Im|250x](https://github.com/stMerlHin/repo_im/blob/main/check.png?raw=true)
