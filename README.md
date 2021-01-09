@@ -15,7 +15,8 @@ A flutter package which contains basics grouped buttons like radio buttons and c
 
 ## Getting start
 To use this package, add `flutter_group_button^[version]` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/)
-####illustration
+
+#### Illustration
     dependencies:
         flutter_group_button: ^0.0.1
 
