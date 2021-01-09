@@ -53,8 +53,13 @@ samples, guidance on mobile development, and a full API reference.
      
 ## RadioGroup parameters details
 
-##(@Required) means that the argument is required by the Widget to work properly
-##(@Optional) means that the argument is not required by the RadioGroup to work
+#### (@Required) means that the argument is required by the Widget to work properly
+    Important to know there is only 3 required parameters for RadioGroup to work
+    they are:
+        groupItemsAlignment,
+        children,
+        onSelectionChanged
+#### (@Optional) means that the argument is not required by the RadioGroup to work
 
  (@Required)
   ### groupItemsAlignment
@@ -97,7 +102,7 @@ samples, guidance on mobile development, and a full API reference.
    (bool): which tells if the item's label must be below or above the Radio. By default, 
     it's set to true. If you want the opposite, just set it to false. One thing to take in consideration,
     the item's label can not be before and below the radio at the same time. it can only be 
-    (before of afer the radio button depending on the textBeforeRadio's value) or 
+    (before of after the radio button depending on the textBeforeRadio's value) or 
     (below or above the radio button depending on the textBelowRadio's value), so there is a
    [priority](#priority) to respect.
 
@@ -229,8 +234,13 @@ This is the result of the code above
 
 
 ## Checkbox parameters details
- ## (@Required) means that the argument is required by the Widget to work properly
- ## (@Optional) means that the argument is not required by the Widget to work
+####(@Required) means that the argument is required by the Widget to work properly
+    Important to know, there is only 3 required parameters for CheckboxGroup to work.
+    They are : 
+        groupItemsAlignment,
+        child,
+        onNewChecked,
+####(@Optional) means that the argument is not required by the Widget to work
  
    ### groupItemsAlignment (@Required);
    (GroupItemsAlignment): The alignment of the CheckboxGroup Items. It can be GroupItemsAlignment.row for row alignment
