@@ -2,6 +2,9 @@
 
 A flutter package which contains basics grouped buttons like radio buttons and checkboxes
 
+## VERSION
+    [0.0.1]
+
 ## Table of content
    * [getting start](#getting-start)
    * [General info](#general-info)
@@ -11,7 +14,10 @@ A flutter package which contains basics grouped buttons like radio buttons and c
    * [CheckboxGroup](#checkboxgroup)
 
 ## Getting start
-To use this package, add `flutter_group_button` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/)
+To use this package, add `flutter_group_button^[version]` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/)
+####illustration
+    dependencies:
+        flutter_group_button: ^0.0.1
 
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
@@ -22,13 +28,30 @@ samples, guidance on mobile development, and a full API reference.
    The RadioGroup has many arguments for more flexibility which are optional. You can implements theme
    for your needs. Important to know that both the radio button and the radio's label are clickable
 
-* [List of arguments](#radiogroup-arguments-list)
+* [RadioGroup parameters list](#radiogroup-parameters-list)
+* [RadioGroup parameters details](#radiogroup-parameters-details)
 * [Short illustration of essentials](#short-illustration)
 
-## RadioGroup argument's list
+## RadioGroup parameters list
+     groupItemsAlignment,
+     onSelectionChanged,
+     defaultSelectedItem = 0,
+     children,
+     textBeforeRadio = true,
+     padding = const EdgeInsets.all(0),
+     margin = const EdgeInsets.all(0),
+     activeColor,
+     focusColor,
+     hoverColor,
+     textBelowRadio = true,
+     priority = RadioPriority.textBeforeRadio,
+     mainAxisAlignment = MainAxisAlignment.start,
+     internMainAxisAlignment = MainAxisAlignment.start,
+     
+## RadioGroup parameters details
 
-(@Required) means that the argument is required by the Widget to work properly
-(@Optional) means that the argument is not required by the RadioGroup to work
+##(@Required) means that the argument is required by the Widget to work properly
+##(@Optional) means that the argument is not required by the RadioGroup to work
 
  (@Required)
   ### groupItemsAlignment
@@ -180,13 +203,31 @@ This is the result of the code above
    The CheckboxGroup has many arguments for more flexibility which are optional. You can implements theme
    for your needs. Important to know that both the checkbox button and the checkbox's label are clickable
 
-* [List of arguments](#checkbox-arguments-list)
+* [List of parameters](#checkboxgroup-parameters-list)
+* [CheckboxGroup parameters details](#checkbox-parameters-details)
 * [Short illustration of essentials](#checkbox-short-illustration)
 
+## CheckBoxGroup parameters list
+    child,
+    onNewChecked,
+    activeColor,
+    focusColor,
+    hoverColor,
+    checkColor,
+    priority = CheckboxPriority.textBeforeCheckbox,
+    groupItemsAlignment,
+    padding = const EdgeInsets.all(0),
+    margin = const EdgeInsets.all(0),
+    textBeforeCheckbox = true,
+    textBelowCheckBox = true,
+    mainAxisAlignment = MainAxisAlignment.start,
+    internMainAxisAlignment = MainAxisAlignment.start,
 
-## Checkbox argument's list
- (@Required) means that the argument is required by the Widget to work properly
- (@Optional) means that the argument is not required by the RadioGroup to work
+
+
+## Checkbox parameters details
+ ## (@Required) means that the argument is required by the Widget to work properly
+ ## (@Optional) means that the argument is not required by the Widget to work
  
    ### groupItemsAlignment (@Required);
      (GroupItemsAlignment): The alignment of the CheckboxGroup Items. It can be GroupItemsAlignment.row for row alignment
